@@ -4,7 +4,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 
 @Component({
-  selector: this.newProperty,
+  selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
@@ -12,7 +12,5 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 })
 
 export class AppComponent {
-  private readonly newProperty = 'app-root';
 
-  title = 'portfolio-tesa';
 }
