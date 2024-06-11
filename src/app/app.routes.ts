@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { HalamanLoginComponent } from './halaman-login/halaman-login.component';
 import { HalamanUtamaComponent } from './halaman-utama/halaman-utama.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 export const routes: Routes = [
