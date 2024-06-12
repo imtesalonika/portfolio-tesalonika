@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import {Router, RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 import {NavbarComponent} from "./navbar/navbar.component";
 
 
@@ -12,6 +12,14 @@ import {NavbarComponent} from "./navbar/navbar.component";
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
+// export class AppComponent {
+//
+// }
 
+export class AppComponent {
+  constructor(private router: Router) {}
+
+  shouldShowNavbar(): boolean {
+    return this.router.url !== '/login';
+  }
 }
